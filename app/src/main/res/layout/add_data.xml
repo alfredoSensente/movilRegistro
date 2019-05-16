@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/add_photo"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_name"
+            android:hint="@string/nombre"
+            android:inputType="text"
+            android:focusable="true"
+            android:layout_below="@id/add_photo"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_age"
+            android:hint="@string/edad"
+            android:inputType="number"
+            android:layout_below="@id/add_name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_carnet"
+            android:hint="@string/carnet"
+            android:inputType="text"
+            android:layout_below="@id/add_age"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_career"
+            android:hint="@string/carrera"
+            android:inputType="text"
+            android:layout_below="@id/add_carnet"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/add_photo"
+            android:layout_alignLeft="@id/add_photo"
+            android:layout_alignBottom="@id/add_photo"
+            android:src="@android:drawable/ic_menu_camera"
+            android:id="@+id/add_btnCargarImg"
+            android:onClick="getUriPhoto"/>
+    </RelativeLayout>
+
+</LinearLayout>
